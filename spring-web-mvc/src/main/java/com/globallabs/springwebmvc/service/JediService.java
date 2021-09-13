@@ -3,13 +3,17 @@ package com.globallabs.springwebmvc.service;
 import com.globallabs.springwebmvc.exception.JediNotFoundExeception;
 import com.globallabs.springwebmvc.model.Jedi;
 import com.globallabs.springwebmvc.repository.JediRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class JediService {
-    
+
+    @Autowired
     JediRepository repository;
     
     public List<Jedi> findAll() {

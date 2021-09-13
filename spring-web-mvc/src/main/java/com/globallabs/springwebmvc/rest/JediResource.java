@@ -1,8 +1,6 @@
 package com.globallabs.springwebmvc.rest;
 
-import com.globallabs.springwebmvc.exception.JediNotFoundExeception;
 import com.globallabs.springwebmvc.model.Jedi;
-import com.globallabs.springwebmvc.repository.JediRepository;
 import com.globallabs.springwebmvc.service.JediService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
 @RestController()
 public class JediResource {
