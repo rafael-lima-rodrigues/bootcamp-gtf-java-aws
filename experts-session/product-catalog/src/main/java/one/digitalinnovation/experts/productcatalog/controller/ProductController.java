@@ -25,8 +25,4 @@ public class ProductController {
         return productRepository.findById(id);
     }
 
-    @GetMapping
-    Iterable<Product> searchAll(){
-        return productRepository.findAll();
-    }
 }
